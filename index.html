@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Programování pro právníky</title>
+
+  <!-- CSS imports-->
+  <link rel="stylesheet" href="style/bootstrap/4.1.3/bootstrap.min.css" />
+  <link rel="stylesheet" href="style/prism.css" />
+  <link rel="stylesheet" href="style/custom.css" />
+
+</head>
+
+<body>
+  <article class="container">
+    <header>
+      <h1>Programování pro právníky</h1>
+      <p>Lukáš Michna</p>
+      <hr />
+    </header>
+    <main>
+      <section>
+        <h2>Může právníkům prospět alespoň základní znalost programování?</h2>
+        <p>
+          Tuto nebo podobou otázku si zřejmě položí většina čtenářů. Otázka je to naprosto legitimní, neboť časové
+          kapacity každého právníka bývají omezené a proto právníkova snaha odstranit ze svého zorného pole vše, co by
+          jeho časem - jeho nejvzácnější komoditou - plýtvalo, pochopitelná.
+        </p>
+        <p>
+          Hned úvodem je proto potřeba říci, že znalost programování je věcí nesmírně užitečnou, a že každému
+          právníkovi, bez ohledu na jeho specializaci či délku praxe, poskytuje nástroj k dosažení vyšší efektivity.
+        </p>
+        <p>
+          Každý právník pracuje s informacemi. Jejich zdrojem mohou být např. zákony, judikatura, odborná literatuta,
+          smlouvy, podklady od klientů, e-maily, protokoly, záznamy komunikace, právní stanoviska, znalecké posudky,
+          výpisy z obchodního rejstříku, listy vlastnictví katastru nemovitostí, a samozřejmě řada dalších.
+        </p>
+        <p>
+          Informace mohou být vytvářeny, vyhledávány, upravovány, porovnávány, tříděny, ukládány, sdíleny, mazány, a
+          může s nimi být prováděna řada dalších operací. Běžně jsou tyto operace s infomracemi prováděny v textových a
+          tabulkových procesorech, s využitím databází zákonů, judikatury. literatury a vzorů, běžne jsou používány
+          internetové vyhledávače a případně též on-line zdroje (často alternativa k používaným desktopovým databázím).
+          Ve větších firmách jsou zpravidla používány systémy řízení dokumentů či specifické prostředky komunikace a
+          sdílení informací.
+        </p>
+        <p>
+          V zásadě tedy byť jen základní znalost programování může každému právníkovi dopomoci dosáhnou vyšší
+          efektivity při
+          práci s informacemi, přičemž za klíčové považuji zejména následující možné přínosy:
+          <ul>
+            <li><i>Automatizace rutinních a opakujících se úkolů;</i></li>
+            <li><i>Škálování práce;</i></li>
+            <li><i>Úspora času.</i></li>
+          </ul>
+          Jednotlivé body přitom spolu úzce souvisí. Rozsáhlé rešerše judikatury a odborné literatury, procházení data
+          roomů při due diligence, analýza e-mailové komunikace, třídění příloh či důkazů, to vše a mnohé další může
+          být činěno mnohem efektivněji s využitím znalostí programování. Uspořený čas lze využít pro další práci nebo
+          jej strávit s rodinou či koníčky.
+        </p>
+        <p>
+          V praxi lze využít znalost programování především ke tvorbě krátkých skriptů pro usnadnění provádění dílčích
+          úkolů v rámci větších celků. Kromě toho lze znalost programování využít i na daleko vyšší úrovni, např. k
+          tvorbě aplikací či modelů strojového učení a jejich následné komercializaci. Tím se otvírá i zcela nový kanál
+          k distribuci právního know-how a spolupráci mezi právnickými profesemi.
+        </p>
+      </section>
+      <section>
+        <h2>Co je to programování?</h2>
+        <p>
+          Programování v naprosto obecném významu znamená sestavování sady instrukcí, které mají být počítačem
+          vykonány. V širším pojetí programování znamená rovnněž analýzu problému a návrh jeho řešení, přičemž toto
+          řešení je popsáno právě v sadě instrukcí, které programátor ukládá počítači provést. </p>
+        <p>
+          V jistém smyslu lze programování připodobnit ke tvorbě receptu nebo návodu. I ty se sestávají z popisu
+          jednotlivých kroků, které je třeba vykonat, aby bylo dosaženo určitého výsledku. Zatímco v případě receptu či
+          návodu je tím, kdo vykonává jednotlivé kroky, kuchař nebo osoba řídící se návodem, v případě počítačového
+          programu to je počítač.</p>
+        <p>
+          Procesem, ne nepodobným programování, může být i tvorba smlouvy, neboť i ta, je-li k její přípravě
+          přistupováno s dostatečným rozmyslem, by měla vycházet z analýzy jejího předmětu a výsledkem by měl být
+          dostatečně jasný popis výsledku zamýšleného stranami, včetně dostatečně návodného popisu postupu, jakým má
+          být zamýšleného výsledku dosaženo.</p>
+        <p>
+          Obdobně, proces aplikace práva lze zase připodobnit k postupu počítače, který postupuje podle zadaných
+          instrukcí. V tomto bodě lze nicméně vypozorovat i jeden podstatný rozdíl mezi programováním (a prováděním
+          programových instrukcí) a procesem tvorby a následné aplikace práva. Zatímco počítač provede jakoukoli
+          instrukci zadanou programátorem, i tehdy, jedná-li se o instrukci vadnou (instrukce sama o sobě nicméně vadná
+          být nemůže, vadný může být toliko výsledek jejího provedení s ohledem na rozpor se záměry či předpoklady
+          programátora ohledně zamýšleného výsledku), v případě aplikace práva lze pomocí sofistikovaných metod výkladu
+          (např. výklad teleologický) dosáhnout správné aplikace práva i v případech, kdy by mechanické provádění
+          instrukcí vedlo k vadnému výsledku.
+        </p>
+      </section>
+      <section>
+        <h2>Volba programovací jazyka</h2>
+        <p>
+          Uvažujeme-li o tom, že začmeme programovat, položíme si logickou otázku, jak a v čem tak budeme činit.
+          Programovat, tedy sestavovat sadu instrukcí, je pochopitelně nutné v jazyce, kterému počítač rozumí.
+        </p>
+        <p>
+          Dle mého názoru jedním z programovacích jazyků, vhodných (nejen) k naučení se základů programování, je
+          JavaScript. JavaScript je lehký, interpretovaný programovací jazyk, původně určený pro vytváření především
+          interaktivních částí internetových stránek. JavaScript je tak velmi snadné používat, protože je integrován do
+          každého internetového prohlížeče. Postupem času, společně s rozvojem webových technologií, se
+          JavasScript vyvinul v programovací jazyk, kterým lze tvořit plnohodnotné aplikace. Jeho použití tak není
+          omezeno pouze na učení se programování, ale může být i prostředkem ke tvorbě aplikací zamýšlených k
+          produkčnímu nasazení.
+        </p>
+      </section>
+      <section>
+        <h2>Volba nástrojů</h2>
+        <p>
+          Velkou výhodou JavaScriptu je, jak již bylo výše uvedeno, že je podporován v každém moderním internetovém
+          prohlížeči. Není tedy třeba nic instalovat (aspoň v úvodní fázi, kdy nevyžadujeme pokročilé funkcionality) a
+          lze přistoupit přímo ke tvorbě JavaScriptového kódu.
+        </p>
+        <p>
+          K zápisu kódu lze využít obyčejný textový editor (např. Notepad ve Windows, TextEdit v MacOS nebo např. Vim v
+          Linuxu), případně lze použít některý specializovaný editor, určený pro psaní programového kódu, z nichž lze
+          doporučit např. Visual Studio Code volně ke stažení na <i><b>https://code.visualstudio.com/</b></i>, případně
+          Atom editor, rovněž volně ke stažení na <i><b>https://atom.io/</b></i>. Oba dva výše uvedené editory jsou
+          bezplatně k dispozici pro všechny hlavní platformy, tedy Windows, MacOS i Linux a současně jsou vynikající
+          ukázkou funkční aplikace, napsané v JavaScriptu.
+        </p>
+      </section>
+      <section>
+        <h2>První kód</h2>
+        <p>
+          První kód, který v JavaScriptu napíšeme, bude tvořit součást webové stránky, kterou zobrazíme v prohlížeči,
+          který následně JavaScriptový kód interpretuje a zobrazí výsledek.
+        </p>
+        <p>
+          V editoru (viz výše) si vytvoříme soubor <i><b>index.html</b></i> a vložíme do něj následující kód:
+          <script type="text/plain" class="language-markup">
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Titulek</title>
+      </head>
+      <body>
+        <script>
+          document.write("První kód v JavaScriptu");
+        &lt;/script&gt;
+      </body>
+    </html>
+
+</script>
+
+          Po jeho uložení na disk a spuštění dvojklikem by se měl spustit internetový prohlížeč, který by měl zobrazit
+          text <i><b>První kód v JavaScriptu</b></i>, tedy text, který jsme požadovali vypsat příkazem <i><b>document.write</b></i>.
+        </p>
+        <p>
+          Náš první kód samozřejmě nedělá nic jiného než to, že vypíše na obrazovku uvedený text. Z obdobného základu
+          nicméně budeme vycházet, s jistými modifikacemi, i v případech, kdy budeme zamýšlet naprogramovat něco
+          skutečně užitečného.
+        </p>
+      </section>
+      <section>
+        <h2>Základy JavaScriptu</h2>
+        <p>
+          Abychom ale něco užitečného zvládli naprogramovat, je nutné si osvojit znalost JavaScriptu na alespoň
+          základní úrovni.
+        </p>
+      </section>
+      <section>
+        <h2>Základní struktura programu</h2>
+        <p>
+          Pro úvod můžeme javascriptový program zjednodušeně považovat za část webové stránky, zajišťující její
+          interaktivitu, který je umístěn mezi značkami (dále budeme používat obvyklejší označení tagy)
+          <i>&lt;script&gt; a &lt;/script&gt;</i>:
+<pre><code class="language-markup">
+    &lt;script&gt;
+      //zde lze zapisovat libovolný javascriptový kód, např. náš výše uvedený příklad s vypsáním textu:
+      document.write("První kód v JavaScriptu");
+    &lt;/script&gt;
+
+</code></pre>
+        </p>
+        <p>
+          V případě rozsáhlejších projektů se javascriptový kód zpravidla umisťuje do externích souborů. Můžeme tak
+          vytvořit např. soubor <i><b>main.js</b></i>, do kterého budeme zapisovat náš kód (zde již bez tagů <i>&lt;script&gt;
+            a &lt;/script&gt;</i>):
+<pre><code class="language-javascript">
+    //zde lze opět zapisovat libovolný JavaScript kód:
+    document.write("První kód v JavaScriptu");
+
+</code></pre>
+        </p>
+        <p>
+          Program pak načteme z externího souboru do našeho hlavního souboru <i><b>index.html</b></i>
+          tak, že v souboru <i><b>index.html</b></i> definujeme tagy <i><b>&lt;script&gt; a &lt;/script&gt;</b></i> s
+          uvedením
+          adresy externího souboru <i><b>main.js</b></i>:
+          <pre><code class="language-markup">
+    &lt;script src="main.js"&gt;&lt;/script&gt;
+
+</code></pre>
+        </p>
+        <p>
+          Celý soubor <i><b>index.html</b></i> s načtením externího souboru <i><b>main.js</b></i> tedy bude vypadat
+          takto:
+          <pre><code class="language-markup">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Titulek&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;script src="main.js"&gt;&lt;/script&gt;              
+      &lt;/body&gt;
+    &lt;/html&gt;
+
+</code></pre>
+        </p>
+        <p>
+          Další, pokročilou možností, jak načítat kód z externího souboru, jsou moduly a jejich importy, nicméně s
+          touto možnosti se seznámíme až v některém z dalších dílů.
+        </p>
+      </section>
+      <section>
+        <h2>Proměnné v JavaScriptu</h2>
+        <p>
+          Proměnné jsou, společně s operátory, základními stavebními kameny každého programovacího jazyka. Jejich
+          prostřednictvím se odehrává zadávání instrukcí, které má počítač provést. Pomocí proměnných si pro náš
+          program vyhrazujeme místo v paměti počítače, do kterého lze ukládat hodnoty a dále s nimi pracovat. Proměnné
+          v JavaScriptu nemají (zásadně) žádný typ, tudíž do jedné proměnné lze postupně uložit číslo, textový řetězec,
+          logickou hodnotu a z pohledu běhu programu takový postup nevyvolá ani chybu, ani varování. Proto se o jazyku
+          JavaScript někdy hovoří také jako o beztypovém, díky této vlastnosti se jedná o jazyk poměrně intuitivní, na
+          druhou stranu, v rozsáhlejších projektech tato vlastnost může být, a často také je, zdojem chyb.
+        </p>
+        <section>
+          <h3>Deklarace proměnných</h3>
+          <p>
+            Abychom proměnné mohli používat v našem programu, je nejprve nutné je deklarovat. To lze učinit pomocí
+            klíčových slov <i><b>var</b></i>, <i><b>let</b></i> nebo <i><b>const</b></i>. Deklaraci proměnných pomocí
+            klíčového slova <i><b>var</b></i> použijeme asi nejčastěji. Pro začátek nám postačí vědět, že narozdíl od
+            deklarace pomocí klíčového slova <i><b>let</b></i> nám vytvoří tzv. globální proměnnou, tedy proměnnou,
+            na kterou budeme "vidět" z kteréhokoli místa našeho programu:
+            <pre><code class="language-javascript">
+    var a;                  // definujeme proměnnou a bez přiřazení hodnoty
+    var a = 5;              // definujeme proměnnou a s přiřazením hodnoty 5
+    var a = "pozdrav";      // definujeme proměnnou a s přiřazením hodnoty "pozdrav"
+
+</code></pre>
+          </p>
+          <p>
+            Kromě beztypovosti má JavaScript ještě jednu vlastnost, která jej činí sice intuitivním, ale na druhou
+            stranu i jazykem náchylným k chybám (což nicméně není primárně problém tohoto jazyka, chyby stále mají
+            svůj původ mezi klávesnicí a židlí). JavaScript totiž umožňuje pracovat i s nedefinovanými proměnnými.
+            Pokud tedy za běhu programu přiřadíme libovolnou hodnotu např. proměnné c, kterou jsme ale předtím
+            nedefinovali, nevyvolá takový postup žádné chybové hlášení ani varování, což zejména v případě větších
+            projektů může způsobit zanesení obtížně odhalitelné chyby do kódu programu. Proto (a nejen proto) byl
+            postupem času vytvořen tzv. striktní režim, který v případě použití nedeklarovaných proměnných vyvolá
+            chybové hlášení. Striktní režim se aktivuje pomocí deklarace <i><b>"use strict"</b></i>:
+            <pre><code class="language-javascript">
+    // Následující postup nevyvolá chybové hlášení:
+    var a = 5;
+    c = a;                  //  c bude nyní rovno 5
+
+    // Tento postup již ale chybové hlášení vyvolá:
+    "use strict";           //  aktivovali jsme striktní režim interpretace kódu
+    var a = 5;
+    c = a;                  //  chyba
+
+</code></pre>
+          </p>
+          <p>
+            Prostřednictvím klíčového slova <i><b>const</b></i> se nedefinují proměnné, ale konstanty, jejich
+            podstatným rozdílem oproti proměnným je, že je po jejich deklaraci již nelze za běhu programu měnit:
+            <pre><code class="language-javascript">
+    // Následující postup nevyvolá chybové hlášení:
+    var pi = 3.14;
+        pi = 3.141          //  pi bude nyní rovno 3.141
+    var pi = 3.14159;       //  proměnnou můžeme i předeklarovat, pi bude nyní rovno 3.14159
+
+    // Následující postup, spočívající v zápisu do konstanty, již ale chybové hlášení vyvolá:
+    const pi = 3.14;        //  deklarovali jsme konstantu pi s hodnotou 3.14
+    pi = 3.14159;           //  pokusili jsme se přepsat konstantu pi a výsledkem je chyba
+
+    // Obdobně chybové hlášení vyvolá i pokus konstantu předefinovat:
+    const pi = 3.14;        //  deklarovali jsme konstantu pi s hodnotou 3.14
+    const pi = 3.14159;     //  pokusili jsme se znova deklarovat konstantu pi a výsledkem je chyba
+      
+    // A stejně vyvolá chybové hlášení i pokus předeklarovat konstantu jako proměnnou:
+    const pi = 3.14;        //  deklarovali jsme konstantu pi s hodnotou 3.14
+    var pi = 3.14159;       /*  pokusili jsme se deklarovat proměnnou se stejným názvem jako konstanta pi 
+                                a výsledkem je chyba */
+    let pi = 3.14159;       //  chyba
+
+</code></pre>
+          </p>
+        </section>
+      </section>
+      <section>
+        <h2>Operátory v JavaScriptu</h2>
+        <p>
+          Již výše bylo uvedeno, že operátory jsou, společně s proměnnými, základními stavebními kameny každého
+          programovacího jazyka. Použitím jedné nebo více proměnných a operátoru dostaneme výraz, který nám data
+          z použitých proměnných zpracuje do nové hodnoty, se kterou lze dále pracovat.
+        </p>
+        <section>
+          <h3>Přiřazení</h3>
+          <p>
+            Přiřazení je základní operací s proměnnými. Přiřazení se provádí operátorem <i><b>&nbsp;=&nbsp;</b></i>.
+            V rámci tohoto článku jsme se s přiřazením již setkali a pro rekapitulaci uvádím následující příklad:
+            <pre><code class="language-javascript">
+    var a = 5;              //  přiřadí proměnné a hodnotu 5
+    var b = 3;              //  přiřadí proměnné b hodnotu 3
+    var c = a + b;          //  přiřadí proměnné c součet proměnných a a b, tedy hodnotu 8
+
+</code></pre>
+          </p>
+        </section>
+        <section>
+          <h3>Sčítání, odčítání, násobení, dělení</h3>
+          <p>
+            Obdobně jako přiřazení fungují i operátory pro sčítání <i><b>&nbsp;+&nbsp;</b></i>,
+            odčítání <i><b>&nbsp;-&nbsp;</b></i>, násobení <i><b>&nbsp;*&nbsp;</b></i>
+            a dělení <i><b>&nbsp;/&nbsp;</b></i>:
+            <pre><code class="language-javascript">
+    var a = 10;             //  přiřadí proměnné a hodnotu 10
+    var b = 2;              //  přiřadí proměnné b hodnotu 2
+    var c;                  //  deklaruje proměnnou c bez přiřazení hodnoty
+
+    /*  
+    Sčítání                                                                                 */
+    c = a + b               /*  proměnné c (deklarované výše) přiřadí součet proměnných a a b, 
+                                tedy hodnotu 12
+    
+    Odčítání                                                                                */
+    c = a - b               /*  proměnné c přiřadí rozdíl (výsledek odčítání) proměnných a a b, 
+                                tedy hodnotu 8
+
+    Násobení                                                                                */
+    c = a * b               /*  proměnné c přiřadí násobek proměnných a a b, tedy hodnotu 20
+                                 
+    Dělení                                                                                  */
+    c = a / b               /*  proměnné c přiřadí podíl (výsledek dělení) proměnných a a b, 
+                                tedy hodnotu 5                                              */
+
+</code></pre>
+          </p>
+          <p>
+            Kromě uvedených základních aritmetických operátorů existují ještě další, které si
+            případně vysvětlíme v dalších dílech.
+          </p>
+        </section>
+        <section>
+          <h3>Operátory pro práci s textovými řetězci</h3>
+          <p>
+            Jako právníci pracujeme s texty. Proto pro nás budou významné operátory, které se uplatní
+            při práci s textovými řetezci. Textové hodnoty uvozujeme buď jednoduchými uvozovkami
+            <i><b>'&nbsp;&nbsp;'</b></i> nebo dvojitými uvozovkami <i><b>"&nbsp;&nbsp;"</b></i>.
+            Standard z roku 2015 (ES6) zavedl dále tzv. šablonové řetězce (template literals),
+            které umožňují do řetězce vkládat výrazy, které se přímo v řetezci
+            vyhodnotí. To přináší výhody především při programování šablon, ve kterých se
+            mezi formátovací kód vkládají výrazy, což doposud bylo nutné činit velmi nepřehledným způsobem.
+            Šablonové řetězce uvozujeme zpětnými uvozovkami (tzv. backtickem)
+            <i><b>`&nbsp;&nbsp;`</b></i>.
+            <pre><code class="language-javascript">
+    var a = 'Ahoj';         //  přiřadí proměnné a hodnotu "Ahoj"
+    var b = "světe";        //  přiřadí proměnné b hodnotu "světe"
+    var c;                  /*  deklaruje proměnnou c bez přiřazení hodnoty
+
+    Spojení řetezců                                                                         */
+    c = a + b               /*  proměnné c (deklarované výše) přiřadí spojení proměnných a a b, 
+                                tedy hodnotu "Ahojsvěte"
+    
+    Další možnosti spojení řetezců                                                          */
+    c = a + " "+ b          /*  proměnné c přiřadí spojení proměnné a, hodnoty (prázdný 
+                                řetezec) " " a proměnné b, tedy hodnotu "Ahoj světe"        */
+
+</code></pre>
+          </p>
+          <p>
+            U šablonových řetězců lze přímo do řetezce vložit výraz, který se sám vyhodnotí. Použitý výraz je nutné
+            vložit mezi uvozovací znaky <i><b>&nbsp;&nbsp;${&nbsp;&nbsp;}&nbsp;&nbsp;</b></i>:
+            <pre><code class="language-javascript">
+    var jmeno = 'Lukáš';    //  přiřadí proměnné jmeno hodnotu 'Lukáš', použili jsme jednoduché uvozovky
+    var prijmeni = "Michna" //  přiřadí proměnné prijmeni hodnotu "Michna", použili jsme dvojité uvozovky
+    var vek = 40;           //  přiřadí proměnné vek hodnotu 40
+    var c;                  //  deklaruje proměnnou c bez přiřazení hodnoty
+
+    // Vytvoříme šablonový řetezec: 
+    c = `Ahoj, jmenuji se ${jmeno} ${prijmeni} a je mi ${vek} let.`;    
+    //  proměnné c přiřadí hodnotu "Ahoj, jmenuji se Lukáš Michna a je mi 40 let."
+
+    //  Bez použití šablonových řetezců bychom museli postupovat poněkud težkopádným způsobem: 
+    c = "Ahoj, jmenuji se "+jmeno+" "+prijmeni+" a je mi "+vek+" let.";
+    /*  Zde vidíme, že jakmile je řetezec delší a složitější, začínáme se v tom rychle ztrácet,
+    zejména kvůli nutnosti odsazovat mezery                                                   */
+
+</code></pre>
+          </p>
+        </section>
+      </section>
+      <section>
+        <h2>Funkce v JavaScriptu</h2>
+        <p>
+          Funkce nám umožňují organizovat náš kód do bloků, čímž jej činí přehlednějším. Funkce lze
+          za běhu programu opakovaně vyvolat, tudíž pro stejnou funkcionalitu, potřebnou na různých
+          místech programu, není nutné opisovat stále stejný kód, ale postačí zavolat příslušnou funkci,
+          což přispívá ke zvýšení efektivity při programování.
+        </p>
+        <section>
+          <h3>Deklarace funkce</h3>
+          <p>
+            Funkci v javascriptu definujeme pomocí klíčového slova <i><b>function</b></i>, která
+            je následována názvem funkce a dále závorkami <i><b>&nbsp;&nbsp;(&nbsp;&nbsp;)&nbsp;&nbsp;</b></i>.
+            V závorkách mohou být uvedeny názvy vstupních parametrů, se kterými má funkce pracovat.
+            Kód, který má být funkcí vykonán, se píše mezi blok tvořený složenými závorkami
+            <i><b>&nbsp;&nbsp;{&nbsp;&nbsp;}&nbsp;&nbsp;</b></i>.
+            <pre><code class="language-javascript">
+    function naDruhou(cislo)  /*  deklarovali jsme funkci s názvem naDruhou a jedním vstupním 
+                                  parametrem s názvem cislo                                     */ 
+    {                         //  začátek bloku kódu naší funkce
+      return cislo * cislo;   /*  pomocí klíčového slova return vracíme výsledek, kterým 
+                                  je druhá mocnina hodnoty (argumentu) předané do funkce
+                                  prostřednictvím vstupního parametru cislo                     */                                                  
+    }                         //  konec bloku kódu naší funkce
+
+</code></pre>
+          </p>
+        </section>
+        <section>
+          <h3>Volání funkce</h3>
+          <p>
+            Jednou deklarovanou funkci v kódu voláme prostřednictvím jejího názvu následovaného závorkami s argumenty,
+            tedy vstupními hodnotami, které funkci předáváme. U výše deklarované funkce <i><b>naDruhou</b></i> bude
+            její volání vypadat následovně:
+            <pre><code class="language-javascript">
+    var x;                  //  deklarovali jsme proměnnou x bez přiřazení hodnoty
+    x = naDruhou(5);        /*  proměnné x jsme přiřadili výsledek funkce naDruhou 
+                                se vstupním argumentem 5, x má tedy hodnotu 25                  */
+                                
+</code></pre>
+          </p>
+          <p>
+            Argument lze funkci předat rovněž prostřednictvím proměnné:
+            <pre><code class="language-javascript">
+    var x;                  //  deklarovali jsme proměnnou x bez přiřazení hodnoty
+    var y = 5;              //  deklarovali jsme proměnnou y a přiřadili jí hodnotu 5
+    x = naDruhou(y);        /*  proměnné y jsme přiřadili výsledek funkce naDruhou se vstupním 
+                                argumentem y,  x má tedy hodnotu 25, protože proměnná y
+                                má hodnotu 5                                                    */
+                                
+</code></pre>
+          </p>
+        </section>
+        <section>
+          <h3>Návratová hodnota funkce</h3>
+          <p>
+            Funkce má praktický význam pouze tehdy, pokud umožňuje výstup své činnosti za běhu
+            programu předat dále. To se děje pomocí klíčového slova <i><b>return</b></i>, které
+            kromě toho, že vrátí zadanou hodnotu jako výsledek funkce, zároveň běh funkce ukončí
+            (tudíž nemá smysl za klíčové slovo return dále něco psát, protože takový kód
+            se nevykoná).
+            <pre><code class="language-javascript">
+    function naseFunkce()
+    {
+     //  zde zapíšeme kód, který funkce vykonává
+      return  /*  a zde zapíšeme hodnotu, kterou má funkce vrátit. Je nicméně možné, aby funkce 
+                nevracela žádnou hodnutu, pak klíčové slovo return nepoužijeme a funcke 
+                se ukončí, jakmile narazí na značku konce bloku kódu }                           */
+    }
+                              
+</code></pre>
+          </p>
+          <p>
+            S funkcemi JavaScript umožňuje provádět velká kouzla. Ne všechny je z důvodu zachování
+            přehlednosti budeme probírat. Je nicméně dobré vědět, že každá funkce si vytváří svůj
+            blok, v rámci kterého lze definovat vlastní proměnné (tzv. block scope). Kromě proměnných
+            definovaných v bloku funkce můžeme z funkce přistupovat i k proměnným definovaným
+            v globálním prostoru pomocí klíčového slova var. Je dokonce možné, aby v rámci globálního
+            prostoru byla deklarována proměnná se stejným názvem, jako proměnná v prostoru funkce,
+            přičemž tyto proměnné se vzájemně neovlivní.
+            <pre><code class="language-javascript">
+    var x = 5;            //  definovali jsme globální proměnnou x a přiřadili jí hodnotu 5
+    alert(x);             //  vyvoláme hlášení, které vypíše hodnotu globální proměnné x, tedy 5
+
+    function test()
+    {
+      var x = 2;          //  definovali jsme proměnnou x v bloku funkce test() a přiřadili jí hodnotu 2
+      alert(x);           //  vyvoláme hlášení, které vypíše hodnotu lokální proměnné x, tedy 2
+    }                                           
+  
+    test();               //  necháme proběhnout funkci test(), vypíše se hodnota 2
+    alert(x);             /*  vyvoláme hlášení, které vypíše hodnotu globální proměnné x, která
+                              si podržela hodnotu 5                                              */
+                              
+</code></pre>
+          </p>
+          <p>
+            Pokud bychom v bloku funkce zapomněli deklarovat x jako proměnnou pomocí klíčového slova
+            var, pracovali bychom přímo s globální proměnnou x:
+            <pre><code class="language-javascript">
+    var x = 5;            //  definovali jsme globální proměnnou x a přiřadili jí hodnotu 5
+    alert(x);             //  vyvoláme hlášení, které vypíše hodnotu globální proměnné x, tedy 5
+
+    function test()
+    {
+      x = 2;              //  nyní přistupujeme přímo ke globální proměnné x a přiřadili jí hodnotu 2
+      alert(x);           //  vyvoláme hlášení, které vypíše hodnotu globální proměnné x, tedy nově 2
+    }                      
+
+    test();               //  necháme proběhnout funkci test(), vypíše se hodnota 2
+    alert(x);             /*  vyvoláme hlášení, které vypíše hodnotu globální proměnné x, která
+                              je nyní 2, protože jsme ji změnili v naší funkci test()            */                  
+</code></pre>
+          </p>
+        </section>
+      </section>
+      <section>
+        <h2>Řízení toku programu</h2>
+        <p>
+          Řízení toku programu se v JavasSriptu děje nejčasteji přes pomdínky a přepínače. Ty nám umožňují
+          za běhu programu vyhodnotit stav vybraných proměnných a na základě toho rozhodnout o dalším
+          průběhu provádění programu.
+        </p>
+        <section>
+          <h3>Podmínky</h3>
+          <p>
+            Podmínky definujeme pomocí klíčových slov <i><b>if ... else</b></i>, případně
+            <i><b>if ... else if ... else</b></i> a za pomoci porovnávacích operátorů
+            je rovno <i><b>==</b></i>, není rovno <i><b>!=</b></i>, větší než <i><b>></b></i>,
+            menší než <i><b>
+                <</b> </i>, vetší nebo rovno <i><b>>=</b></i> a menší nebo rovno
+            <i><b>
+                <=</b> </i>. Základní definice podmínky by tedy mohla vypadat následovně: <pre><code class="language-javascript">
+  var x = 5;            
+  
+  if (x == 5){
+    alert ("proměnná x je rovna 5");    //  vypíše se toto oznámení, protože proměnná x je rovna 5
+  } else {
+    alert ("proměnná x není rovna 5");
+  }
+
+</code></pre>
+          </p>
+          <p>
+            Poněkud složitější podmínka by mohla vypadat následovně:
+            <pre><code class="language-javascript">
+  var x = 5;            
+  
+  if (x == 3){
+    alert ("proměnná x je rovna 3");    
+  } else if (x > 3) {
+    alert ("proměnná x je větší než 3");  //  vypíše se toto oznámení, protože proměnná x má hodnotu 5
+  }
+  else if (x < 3) {
+    alert ("proměnná x je menší než 3");
+  }
+
+</code></pre>
+          </p>
+        </section>
+        <section>
+          <h3>Přepínače</h3>
+          <p>
+            Přepínače slouží k vyhodnocení složitejších možností. Jsou definovány pomocí klíčových slov
+            <i><b>switch</b></i>, <i><b>case</b></i>, <i><b>default</b></i> a <i><b>break</b></i>.
+            Přepínač uvozujeme klíčovým slovem <i><b>switch</b></i>, následují definice jednotlivých
+            případů (možností), uvozených klíčovým slovem <i><b>case</b></i>. Každý případ musíme
+            ukončit klíčovým slovem <i><b>break</b></i>, což je důležité, protože jinak by se kód
+            prováděl až do okamžiku, než by narazil na klíčové slovo break v rámci jiného case nebo
+            dokud by neproběhl do konce přepínače. Klíčové slovo <i><b>default</b></i> používáme
+            pro ošetření případů, pro které nepředvídáme žádné specifické řešení, lze si to představit
+            jako sběrnou kategorii.
+            <pre><code class="language-javascript">
+  var sazba = "advokat";
+
+  switch (sazba) {
+    case 'student':
+      alert('Hodinová sazba studenta je 1.000,- Kč.');
+      break;
+    case 'koncipient':
+      alert('Hodinová sazba koncipienta je 2.000,- Kč.');
+      break;
+    case 'advokat':
+      alert('Hodinová sazba advokáta je 3.000,- Kč.');
+      break;
+    case 'partner':
+      alert('Hodinová sazba partnera je 4.000,- Kč.');
+      break;
+    default:
+      alert('Pro tuto pozici nás kontaktujte s individuálním požadavkem.');
+  }
+
+</code></pre>
+          </p>
+        </section>
+        <section>
+          <h3>Smyčky</h3>
+          <p>
+            Smyčky slouží k provádění opakovaných činností. Jsou definovány pomocí klíčových slov
+            <i><b>for</b></i>, <i><b>while</b></i>, <i><b>for ... in</b></i> a <i><b>do ... while</b></i>.
+          </p>
+          <p>
+            Zřejmě nejpoužívanější je smyčka definovaná pomocí klíčového slova <i><b>for</b></i>. Za ním
+            následující závorky, do kterých se zpravidla zapisují 3 parametry. První, který se vykoná
+            jednou před spuštěním smyčky, druhý, který definuje podmínku, při jejímž plnění smyčka
+            probíhá, a třetí, který se vykoná vždy po proběhnutí jednoho kola při běhu smyčky:
+            <pre><code class="language-javascript">
+    for (var i = 0; i < 5; i++) {       /*  definujeme proměnnou i s výchozí hodnotou 0; smyčka má probíhat,
+                                            dokud bude i menší než 5; a po každém proběhnutí smyčky se proměnná i
+                                            zvýší o 1.  
+                                        */
+      alert(i);                         /*  v každém průběhu smyčky bude vypsána aktuální hodnota proměnné i,
+                                            postupně tak budou vypsány hodnoty od 0 do 4
+                                        */
+    }
+
+</code></pre>
+          </p>
+          <p>
+            Nejjednodušší je smyčka definovaná pomocí klíčového slova <i><b>while</b></i>. Za ním
+            následující závorky, do kterých se zapisuje 1 parametr, a to podmínka, při jejímž plnění
+            smyčka probíhá:
+            <pre><code class="language-javascript">
+    var i = 0;  
+    while (i < 10) {                      /*  definujeme podmínku, tedy smyčka bude probíhat, dokud bude 
+                                              proměnná i menší než 10
+                                          */
+        alert(i);                         /*  v každém průběhu smyčky bude vypsána aktuální hodnota proměnné i,
+                                              postupně tak budou vypsány hodnoty od 0 do 9
+                                          */
+        i++;                              /*  musíme se sami postarat o navýšení hodnoty proměnné i, jinak bychom 
+                                              zůstali uzavřeni v nekonečné smyčce
+                                          */
+      }
+
+</code></pre>
+          </p>
+        </section>
+      </section>
+      <section>
+        <h2>Struktury pro práci s daty</h2>
+        <p>
+          Struktury pro práci s daty jsou objekty, které si můžeme představit jako složitejší proměnné, které nám
+          umožňují organizovaným způsobem pracovat s většími objemy dat. Jejich základními typy jsou pole
+          <i><b>Array</b></i> a objekty <i><b>Object</b></i>.
+
+        </p>
+        <section>
+          <h3>Pole</h3>
+          <p>
+            Pole je často využívanou datovou strukturou, kterou můžeme definovat obdobně jako proměnnou s tím, že jí
+            přiřadíme hodnotu uvozenou hranatými závorkami <i><b>[]</b></i>, do kterých zapíšeme jednotlivé hodnoty,
+            oddělené od sebe čárkami. Základní definice pole může vypadat např. následovně:
+            <pre><code class="language-javascript">
+    var ovoce = ["banany", "jabka", "hrušky", "mandarinky"];
+    
+</code></pre>
+          </p>
+          <p>
+            K hodnotám definovaným v poli musíme nějakým způsobem přistupovat. To můžeme učinit prostřednictvím
+            indexu pole, který standardně narůstá od 0. Pro začátek je dobré si uvědomit, že index pole ovoce opravdu
+            začíná od 0, tudíž pokud chceme přistoupit k prvnímu prvku pole ("banany"), musíme použít index 0,
+            nikoli index 1.
+            <pre><code class="language-javascript">
+    var obory = ["občan", "pracko", "trest", "správa"];
+    alert(obory[0])       //  vypíše hodnoty pole ovoce na indexu 0, tedy "občan"
+    alert(obory[3])       //  vypíše hodnoty pole ovoce na indexu 3, tedy "správa"
+
+    obory[2] = "obchod"   /*  zapíše do pole na index 2 hodnotu "obchod", kterou bude nahrazena 
+                              aktuální hodnota "trest"  */
+    alert(obory[2])       //  ano, skutečně to nyní je "obchod"
+  </code></pre>
+          </p>
+          <p>
+            K hodnotám definovaným v poli lze přistupovat i ve smyčce, pomocí metody <i><b>forEach</b></i>,
+            která je vlastní každému poli (metoda je funkce, ale protože je zavěšena na objektu, říká se
+            jí metoda). Jako parametr metody forEach je nutné předat funkci, kterou
+            bude smyčka při každém jejím průběhu volat. Anglický název pro tuto funkc je <i><b>callback</b></i>,
+            český ekvivalent neexistuje, nicméně zřejmě by takovou funkci bylo možné nazývat jako odvolávkovou.
+            <pre><code class="language-javascript">
+    var obory = ["občan", "pracko", "trest", "správa"];
+
+    obory.forEach(function(mojespecializace) {       /*   definovali jsme nepojmenovanou odvolávkovou funkci
+                                                          s parametrem mojespecializace  */
+      alert(mojespecializace);                       //   postupně budou vypsány všechny prvky pole obory
+    });
+
+</code></pre>
+          </p>
+        </section>
+        <section>
+          <h3>Objekty</h3>
+          <p>
+            Objekty jsou další často využívanou datovou strukturou. Přesněji řečeno, terminologicky správně
+            bychom měli hovořit o tzv. objektových literálech, protože JavaScript ze své koncepce považuje
+            za objekt doslova vše (tím si ale nyní nebudeme plést hlavu). Objektový literál můžeme opět
+            definovat obdobně jako proměnnou s tím, že jí přiřadíme hodnotu uvozenou složenými
+            závorkami <i><b>{}</b></i>, do kterých zapíšeme páry <i><b>klíč : hodnota</b></i>,
+            oddělené od sebe čárkami. Základní definice objektového literálu může vypadat např. následovně:
+            <pre><code class="language-javascript">
+      var osoba = {jmeno: "Lukáš", prijmeni: "Michna", vek: 40};
+
+</code></pre>
+          </p>
+          <p>
+            I k hodnotám definovaným v objektu se musíme nějakým způsobem dostat. K tomu lze typicky použít
+            buď název objektu, následovaný tečkou <i><b>.</b></i> a názvem klíče, případně název objektu,
+            následovaný hranatými závorkami s názvem klíče, uvedeným v uvozovkách <i><b>['klic']</b></i>.
+            <pre><code class="language-javascript">
+    var osoba = {jmeno: "Lukáš", prijmeni: "Michna", vek: 40};
+
+    alert(osoba.jmeno);                   //  vypíše se "Lukáš"
+    alert(osoba['prijmeni']);             //  vypíše se "Michna"
+
+    osoba.vek = 30;                       //  hodnota na klíči "vek" se přepíše na 30;
+    alert(osoba.vek);                     //  škoda, že to tak nefunguje i v reálném světě
+
+</code></pre>
+          </p>
+          <p>
+            K hodnotám definovaným v objektovém literálu lze rovněž přistupovat i ve smyčce,
+            pomocí smyčky <i><b>for ... in</b></i>. Základní implementace je poměrně jednoduchá,
+            nicméně objektové literály lze definovat i jako vložené (tedy objektový literál bude
+            jedním z prvků jiného objektového literálu) a na tyto vložené objektové literály
+            by již následující základní implementace nedostačovala:
+<pre><code class="language-javascript">
+    var osoba = {jmeno: "Lukáš", prijmeni: "Michna", vek: 40};
+
+    for (var klic in osoba) {
+      alert(osoba[klic]);
+    }
+    
+</code></pre>
+          </p>
+        </section>
+      </section>
+      <section>
+        <h2>Interakce s uživatelem</h2>
+        <p>
+          Interakce s uživatelem v zásadě slouží pro vkládání parametrů nutných pro běh programu
+          a vypsání výstupu (nejlépe způsobem pro uživatele srozumitelným). Pro obsluhu interakce
+          s uživatelem si již nevystačíme pouze se samotným JavaScriptem, ale budeme muset zapojit
+          i některé prvky značkovacího jazyka <i><b>HTML</b></i>, pomocí kterého se ve webových
+          aplikacích tvoří uživatelské rozhraní.
+        </p>
+        <p>
+          Pro přehlednost použijeme pouze několik málo formátovacích značek, a to <i><b>INPUT</b></i>,
+          pomocí kterého ošetříme vstupy od uživatele, dále <i><b>DIV</b></i>, pomocí kterého zajistíme
+          vypsání výstupů uživateli a konečně <i><b>BUTTON</b></i>, kterým ošetříme potvrzení akce
+          ze strany uživatele.
+<pre><code class="language-markup">
+    &lt;input type="text" id="vstup1" /&gt;
+    &lt;div id="vystup1"&gt;
+
+</code></pre>
+        </p>
+      </section>
+
+    </main>
+  </article> <!-- JavaScript imports -->
+  <script src="js/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/popper/1.14.5/popper.min.js"></script>
+  <script src="js/bootstrap/4.1.3/bootstrap.min.js"></script>
+  <script src="js/prism.js"></script>
+
+
+</body>
+
+</html>
